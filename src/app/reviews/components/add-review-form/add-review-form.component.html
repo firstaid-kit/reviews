@@ -1,0 +1,24 @@
+<div *ngIf="form">
+    <form 
+      [formGroup]="form">
+  
+      <div 
+        *ngFor="let el of formElements"
+        class="review-form">
+        <app-review-form-element 
+          [element]="el" 
+          [form]="form">
+        </app-review-form-element>
+      </div>
+  
+      <div>
+        <button 
+          mat-raised-button
+          color="primary"
+          (click)="submitForm()">
+          Save
+        </button>
+      </div>
+    </form>
+  
+  </div>

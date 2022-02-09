@@ -1,0 +1,17 @@
+<div 
+    *ngIf="reviews"
+    class="reviews">
+
+    <div *ngFor="let review of reviews">
+        <single-review
+            [mediaType]="review.data.media_type"
+            [title]="review.data.title"
+            [creator]="review.data.creator"
+            [reviewComments]="review.data.review_comments"
+            [starRating]="review.data.star_rating"
+            [createdDatetime]="review.created_datetime"
+            [id]="review.id">
+        </single-review>
+    </div>
+
+</div>

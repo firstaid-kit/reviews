@@ -1,0 +1,50 @@
+<mat-card
+    class="review-card">
+    <mat-card-title
+        class="title">
+        {{title}}
+    </mat-card-title>
+    <mat-card-content>
+        <div
+            class="content">
+            <div>
+                <p>
+                    <strong>CREATOR: </strong>
+                    {{creator}}
+                </p>
+            </div>
+    
+            <div>
+                <p>
+                    <strong>TYPE: </strong>
+                    {{mediaType}}
+                </p>
+            </div>
+
+            <div>
+                <p>
+                    <strong>STAR RATING: </strong>
+                    {{starRating}}
+                </p>
+            </div>
+    
+            <div>
+                <p>
+                    <strong>REVIEW COMMENTS: </strong>
+                    {{reviewComments}}
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="footer">
+            <button
+                class="buttons"
+                mat-button
+                (click)="deleteReview()">
+                DELETE
+            </button>
+        </div>
+
+    </mat-card-content>
+</mat-card>
